@@ -1,0 +1,179 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+@media only screen and (max-width: 1366px) {
+  
+  body  {
+    margin: 0;
+    padding: 0;
+}
+}
+
+/*----------------aboutus--------------------------------------*/
+
+
+.main {
+
+    height: 100vh;
+    width: 80%;
+    background-image: linear-gradient(to bottom right, rgb(54, 44, 44), rgb(0, 157, 230));
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    margin: auto;
+    border-radius: 5%;
+}
+
+h3 {
+    text-align: center;
+    font-size: 4ch;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    padding-top: 20px;
+}
+
+.paragraph1 {
+
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 2.5ch;
+    font-family: cursive;
+
+}
+
+.paragraph2 {
+
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    color: rgb(255, 253, 253);
+    font-size: 2.5ch;
+    font-family: cursive;
+}
+
+.paragraph3 {
+
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 2.5ch;
+    font-family: cursive;
+}
+
+.paragraph4 {
+
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 2.5ch;
+    font-family: cursive;
+}
+
+.pak {
+
+    text-align: center;
+    color: rgb(217, 250, 28);
+    text-align: center;
+    font-size: 5ch;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(7, 7, 7);
+    margin: 80px;
+
+
+}
+/*-------------------------footer--------------------------------------------*/
+html{
+    scroll-behavior: smooth;
+}
+.hr1 {
+    margin-left: 25%;
+    margin-right: 25%;
+
+
+}
+
+.hr2 {
+    margin: 1%;
+    margin-top: 180px;
+    margin-left: 185px;
+    margin-right: 185px;
+
+}
+
+.hr3 {
+   
+    margin-top: 1%;
+    margin-left: 185px;
+    margin-right: 185px;
+
+}
+
+.location {
+
+    text-align: center;
+    color: rgb(179, 238, 16);
+    font-size: 2ch;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.contact {
+
+    float: left;
+    margin: 2px;
+    margin-left: 450px;
+    color: rgb(179, 238, 16);
+    padding: 20px;
+    cursor: pointer;
+
+}
+
+.timing {
+    margin: 2px;
+    float: right;
+    margin-right: 450px;
+    color: rgb(179, 238, 16);
+}
+
+.mainicon {
+    display: inline-flex;
+    margin-left: 40%;
+}
+
+.icons {
+    margin: 2%;
+    margin-left: 4%;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    cursor: pointer;
+}
+#icon1:hover {
+
+    color: rgb(73, 84, 145);
+}
+#icon2:hover {
+
+    color: #d6249f;
+}
+#icon3:hover {
+
+    color: rgb(211, 14, 14);
+}
+#icon4:hover {
+
+    color: lightgreen;
+}
+
+.text{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin: 2%;
+    font-size: 3ch;
+}
+/*-------------------------footer--------------------------------------------*/

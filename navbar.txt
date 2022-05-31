@@ -1,0 +1,64 @@
+ <div class="nav">
+      
+        <ul>
+          
+            <li><a href="#Order">Order</a></li>
+            <li><a href="#Deals">Deals</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="aboutus.html">Aboutus</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a class="active" href="#">home</a></li>
+        </ul>
+    </div>
+
+
+body {
+  font-family: Arial;
+  background-color:#343a40;
+  margin: 0;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+
+
+}
+
+.icon a {
+  text-decoration: none;
+}
+
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#343a40;
+  box-shadow: 3px 3px 5px rgb(252, 255, 252);
+  height: 13vh;
+}
+
+.nav li {
+  float: right;
+  margin-top: 30px;
+  margin-right: 45px;
+  padding-right: 11px;
+}
+
+.nav li a {
+  display: inline-flex;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 11px 14px;
+  text-decoration: none;
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: rgb(18, 19, 16);
+}
+
+
+.nav li a:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+
+
