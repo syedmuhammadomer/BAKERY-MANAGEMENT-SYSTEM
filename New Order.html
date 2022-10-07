@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>SWIRLS</title>
+    <link rel="stylesheet" type="text/css" href="New Order.css">
+    <link rel="stylesheet" type="text/css" href="navstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+
+
+    <!-----------------------------nav bar-------------------------------------------->
+    <div class="nav">
+
+        <ul>
+            <a id="logo">Swirls</a>
+            <li><a class="active" href="#">Order</a></li>
+            <li><a href="Custom Order.html">Custom order</a></li>
+            <li><a href="#footer">Contact</a></li>
+            <li><a href="aboutus.html">Aboutus</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+    <!-------------------------------------------------------------------------------------------->
+
+<form>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+
+        <div class="row">
+          <div class="col-50">
+            <h3  style="color: rgb(241, 255, 49);"  >Billing Address</h3>
+            <label style="color: white;" for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Full Name">
+            <label  style="color: white;"  for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="@example.com">
+            <label  style="color: white;"  for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="Block 24 15th Street">
+            <label  style="color: white;"  for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Karachi">
+
+
+          </div>
+
+          <div class="col-50">
+            <h3  style="color: rgb(250, 253, 52);"  >Payment</h3>
+            <label  style="color: white;"  for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Registered Name">
+            <label  style="color: white;"  for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label  style="color: white;"  for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="May">
+
+            <div class="row">
+              <div class="col-50">
+                <label  style="color: white;"  for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2022">
+              </div>
+              <div class="col-50">
+                <label  style="color: white;"  for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="100">
+              </div>
+            </div>
+          </div>
+
+        </div>
+		
+				 <div>
+            <fieldset class="delivery">
+              <legend  style="color: rgb(202, 255, 8);" >Delivery</legend>
+              <label  style="color: white;"  for="del">Preferred delivery time: </label>
+              <input type=time min="11:00" max="21:00" step="900" name="del" id="del" required /><br />
+              <br><label  style="color: white;"  for="instr">Delivery instructions: </label><br />
+              <textarea rows="3" cols="60" name="instr" id="instr" maxlength=1000></textarea>
+            </fieldset>
+          </div>
+        <label>
+          <input  style="color: rgb(202, 255, 8);" type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      <div class="col-25">
+    <div class="container">
+      <h4  style="color: rgb(202, 255, 8);" >Cart
+        <span class="price" style="color:rgb(0, 0, 0) ; font-size: 3ch;" >
+          <i class="fa fa-shopping-cart"></i>
+          <b>0</b>
+        </span>
+      </h4>
+      <hr>
+      <p>Total <span class="price" style="color:rgb(202, 255, 8)"><b>-</b></span></p>
+    </div>
+  </div>
+	</div>
+  </div>
+</div>
+</form>
+<!------------------------------------------>
+<footer id="footer" ></footer>
+<div class="hr1">
+  <hr>
+</div>
+
+<footer>
+  <br></br>
+  <br></br>
+
+  <div class="box">
+      <div class="location">
+
+
+          <br>
+          <p> <i class="fa fa-map-marker" style="font-size:16px"></i> Main Branch, ABC Road Karachi, Pakistan</p>
+          </i>
+      </div>
+      <div class="contact">
+          <p>
+              <i class="fa fa-phone" style="font-size:16px"></i> +92 321 1233467<br>
+              <i class="fa fa-phone" style="font-size:16px"></i> +92 321 7697621<br>
+              <i class="fa fa-envelope" style="font-size:16px"></i> expertoo@gmail.com<br>
+          </p>
+      </div>
+
+
+      <div class="timing">
+          <p>
+              <h1 style="color: red; font-size: 2ch;">Opening & Closing Hours<br></h1>
+              Monday - Saturday <br>
+              06:00 AM - 12:00 PM<br>
+              Sunday<br>
+              08:00 AM - 11:00 PM<br>
+          </p>
+      </div>
+  </div>
+  <hr class="hr2">
+
+  <div class=" mainicon">
+      <div class="icons">
+          <i class="fa fa-facebook-official" id="icon1" style="  font-size: 36px;"></i> </div>
+      <div class="icons">
+          <i class="fa fa-instagram" id="icon2" style="  font-size: 36px;"></i> </div>
+      <div class="icons">
+          <i class="fa fa-youtube" id="icon3" style="  font-size: 36px;"></i> </div>
+      <div class="icons">
+          <i class="fa fa-whatsapp" id="icon4" style="  font-size: 36px;"></i> </div>
+  </div>
+  <hr class="hr3">
+  <div class="text">
+      <p> Copyright © 2020 Swirls</p>
+
+  </div>
+
+</footer>
+</footer>
+<!------------------------------------------>
+</body>
+</html>

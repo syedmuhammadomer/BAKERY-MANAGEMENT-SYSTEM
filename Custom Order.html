@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>SWIRLS</title>
+  <link rel="stylesheet" type="text/css" href="Custom Order.css">
+  <link rel="stylesheet" type="text/css" href="navstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <!-----------------------------nav bar-------------------------------------------->
+  <div class="nav">
+
+    <ul>
+      <a id="logo">Swirls</a>
+      <li><a href="New Order.html">Order</a></li>
+      <li><a class="active" href="#">Custom order</a></li>
+      <li><a href="#footer">Contact</a></li>
+      <li><a href="aboutus.html">Aboutus</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+  </div>
+  <!-------------------------------------------------------------------------------------------->
+  <h1 style="text-align: center; font-size: 5ch;">For Customized Order</h1>
+  <i>
+    <h2 style="text-align: center; color: #FFC107; font-size: 3ch;">Show us your creative imagination!</h2>
+  </i>
+
+  <div style="text-align: center;">
+    <form method="post" action="">
+
+      <p style="text-align: center;  color: #ffffff; font-size: 3ch; ">"Orders will be confirmed after 50% advance
+        payment at your nearest Swirls outlet.</p>
+      <!--------------------------------------------slider----------------------------------------------------->
+      <div class="carousel">
+        <div class="image-container" id="imgs">
+          <img src="pictures/slide5.jpg" alt="Image" style="height: 50vh;">
+          <img src="pictures/slide 6.jpg" alt="Image" style="height: 50vh;">
+          <img src="pictures/slide 7.jpg" alt="Image" style="height: 50vh;">
+        </div>
+        <script>
+          var imgs = document.getElementById("imgs");
+
+          var img = document.querySelectorAll("#imgs img");
+
+          var idx = 0;
+
+          function run() {
+            idx++;
+
+            if (idx > img.length - 1) {
+              idx = 0;
+            }
+
+            imgs.style.transform = `translateX(${-idx * 100}%)`;
+          }
+
+          setInterval(run, 2500);
+        </script>
+
+      </div><br></br>
+
+
+      <!----------------------------------------------------------------------------------->
+
+      <form>
+      
+        <div class="row">
+          <div class="col-75">
+            <div class="container">
+              <form action="/action_page.php">
+        
+                <div class="row">
+                  <div class="col-50">
+                    <h3 style="color: rgb(230, 226, 36);"> Customer Details</h3>
+                    <label style="color: white;" for="fname"><i class="fa fa-user"></i> Full Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Full Name">
+                    <label style="color: white;"  for="text">CNIC *(For Integrity Reasons)</label>
+                    <input type="text" id="email" name="email" placeholder="0000-0000000-0">
+                    <label  style="color: white;" for="adr"><i class="fa fa-address-card-o"></i>(For Members) Swirl's Membership No.</label>
+                    <input type="text" id="adr" name="address" placeholder="45TGHG">
+        
+        
+        
+                  </div>
+        
+                  <div class="col-50">
+                    <h3 style="color: rgb(233, 229, 14);" >   Contact Details    </h3>
+                    <label style="color: white;" for="cname">Cellphone</label>
+                    <input type="text" id="cname" name="cardname" placeholder="Cell Digits">
+                    <label style="color: white;" for="ccnum">Email Address</label>
+                    <input type="text" id="ccnum" name="cardnumber" placeholder="example@example.com">
+                    <label style="color: white;" for="expmonth">Residential Address</label>
+                    <input type="text" id="expmonth" name="expmonth" placeholder="123St 23 Block">
+                  </div>
+              </div>
+            
+              <div>
+              <h3 style="text-align: left; color: rgb(233, 229, 14);">Your order will be prepared by the next day!</h3>
+                    <fieldset class="delivery">
+                      <legend style="color: rgb(233, 229, 14);"  >Pick Up/Delivery Time</legend>
+                      <label style="color: white;" for="del">Preferred time: </label>
+                      <input type=time min="11:00" max="21:00" step="900" name="del" id="del" required /><br />
+                      <br><label style="color: white;" for="instr">(For Delivery Only) Any special instructions?: </label><br />
+                      <textarea rows="3" cols="60" name="instr" id="instr" maxlength=10></textarea>
+                    </fieldset>
+                  </div>
+              
+                       <div style="float: down;">
+                    <fieldset class="choice">
+                      <legend style="color: rgb(233, 229, 14);"  >Event Type *</legend>
+                        <label style="color: rgb(255, 255, 255);" ><input type=radio name=topping id="cc" required value="cc" /> Birthday</label><br />
+                      <label style="color: rgb(255, 255, 255);"  ><input type=radio name=topping id="cc" required value="cc" />Anniversary</label><br />
+                      <label style="color: rgb(255, 255, 255);" ><input type=radio name=topping id="cc" required value="cc" />Wedding</label><br />
+                    </fieldset>
+                  </div>
+              
+                  <div style="float: down;">
+                    <fieldset class="Product">
+                      <legend style="color: rgb(233, 229, 14);" >Select Product*</legend>
+                        <label style="color: rgb(255, 255, 255);"><input type=radio name=topping id="cc" required value="cc" />Customized Cake</label><br />
+                      <label style="color: rgb(255, 255, 255);" ><input type=radio name=topping id="cc" required value="cc" />Customized Cookies</label><br />
+                      <label style="color: rgb(255, 255, 255);"><input type=radio name=topping id="cc" required value="cc" />Customized Cupcakes</label><br />
+                    </fieldset>
+                  </div>
+              
+                  <p style="text-align: Left;color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;For Cake and Cupcakes Customzation.
+                  <div style="float: left;">
+                    <fieldset class="flavour">
+                      <legend style="color: rgb(233, 229, 14);" >Flavours *</legend>
+                      <label style="color: rgb(255, 255, 255);" ><input type=radio name=base id="M" required value="s" /> Malt</label><br />
+                      <label style="color: rgb(255, 255, 255);"  ><input type=radio name=base id="S" required value="m" /> Special Fudge</label><br />
+                      <label style="color: rgb(255, 255, 255);" ><input type=radio name=base id="C" required value="c" /> Coffee Crunch</label><br />
+                <label style="color: rgb(255, 255, 255);"  ><input type=radio name=base id="R" required value="r" /> Red Velvet</label><br />
+                <label style="color: rgb(255, 255, 255);"  ><input type=radio name=base id="b" required value="b" /> Brownie (New)</label><br />
+                    </fieldset>
+                  </div>
+              <div style="float: left;">
+                    <fieldset class="tier">
+                      <legend style="color: rgb(233, 229, 14);" >Tier *</legend>
+                      <label style="color: rgb(255, 255, 255);"  ><input type=checkbox name=extra id="mu" value="mu" /> No Tiers</label><br />
+                      <label style="color: rgb(255, 255, 255);"  ><input type=checkbox name=extra id="pe" value="pe" /> 1 Tiers</label><br />
+                      <label style="color: rgb(255, 255, 255);" ><input type=checkbox name=extra id="an" value="an" /> 2 Tiers</label><br />
+                      <label style="color: rgb(255, 255, 255);"  ><input type=checkbox name=extra id="ch" value="ch" /> 3 Tiers</label><br />
+                 <label style="color: rgb(255, 255, 255);"  ><input type=checkbox name=extra id="ch" value="ch" /> Custom</label><br />
+                    </fieldset>
+                  </div>
+                  <div style="float: left;">
+                    <fieldset class="size">
+                      <legend style="color: rgb(233, 229, 14);">Size *</legend>
+                      <label style="color: rgb(255, 255, 255);"  ><input type=checkbox name=extra id="mu" value="mu" /> 4 lbs</label><br />
+                      <label style="color: rgb(255, 255, 255);"  ><input type=checkbox name=extra id="pe" value="pe" /> 5 lbs</label><br />
+                      <label style="color: rgb(255, 255, 255);" ><input type=checkbox name=extra id="an" value="an" /> 6 lbs</label><br />
+                      <label style="color: rgb(255, 255, 255);" ><input type=checkbox name=extra id="ch" value="ch" /> 7 lbs</label><br />
+                 <label style="color: rgb(255, 255, 255);" ><input type=checkbox name=extra id="ch" value="ch" /> Custom</label><br />
+                    </fieldset>
+                  </div>
+              
+              
+                  <div style="float: left;">
+                    <fieldset class="writing">
+                      <legend style="color: rgb(233, 229, 14);" >Writing *</legend>
+                      <label style="color: rgb(255, 255, 255);"  ><input type=checkbox name=extra id="mu" value="mu"  /> No Writing</label><br />
+                      <label style="color: rgb(255, 255, 255);"  ><input type=checkbox name=extra id="pe" value="pe" /> Custom Writing</label><br />
+                      <label style="color: rgb(255, 255, 255);"  ><input size="20px"  type=textbox name=extra id="an"  /></label><br />
+                    </fieldset>
+                  </div>
+               
+         
+              
+              
+              
+                
+                <input type="submit" value="Continue to checkout" class="btn">
+        
+          </div>
+          </div>
+        </div>
+        </form>
+        <!---------------------------------------->
+        <footer id="footer" ></footer>
+        <div class="hr1">
+          <hr>
+        </div>
+        
+        <footer>
+          <br></br>
+          <br></br>
+        
+          <div class="box">
+              <div class="location">
+        
+        
+                  <br>
+                  <p> <i class="fa fa-map-marker" style="font-size:16px"></i> Main Branch, ABC Road Karachi, Pakistan</p>
+                  </i>
+              </div>
+              <div class="contact">
+                  <p>
+                      <i class="fa fa-phone" style="font-size:16px"></i> +92 321 1233467<br>
+                      <i class="fa fa-phone" style="font-size:16px"></i> +92 321 7697621<br>
+                      <i class="fa fa-envelope" style="font-size:16px"></i> expertoo@gmail.com<br>
+                  </p>
+              </div>
+        
+        
+              <div class="timing">
+                  <p>
+                      <h1 style="color: red; font-size: 2ch;">Opening & Closing Hours<br></h1>
+                      Monday - Saturday <br>
+                      06:00 AM - 12:00 PM<br>
+                      Sunday<br>
+                      08:00 AM - 11:00 PM<br>
+                  </p>
+              </div>
+          </div>
+          <hr class="hr2">
+        
+          <div class=" mainicon">
+              <div class="icons">
+                  <i class="fa fa-facebook-official" id="icon1" style="  font-size: 36px;"></i> </div>
+              <div class="icons">
+                  <i class="fa fa-instagram" id="icon2" style="  font-size: 36px;"></i> </div>
+              <div class="icons">
+                  <i class="fa fa-youtube" id="icon3" style="  font-size: 36px;"></i> </div>
+              <div class="icons">
+                  <i class="fa fa-whatsapp" id="icon4" style="  font-size: 36px;"></i> </div>
+          </div>
+          <hr class="hr3">
+          <div class="text">
+              <p> Copyright © 2020 Swirl</p>
+        
+          </div>
+        
+        </footer>
+        </footer>
+        <!------------------------------------------>
+
+
+</body>
+
+</html>

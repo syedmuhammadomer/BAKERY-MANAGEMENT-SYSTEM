@@ -1,0 +1,173 @@
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: nowwrap;
+  margin: 0 16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 15px 0;
+}
+
+.container {
+  background-image: linear-gradient(to bottom right, rgb(34, 27, 27), rgb(0, 157, 230));
+ padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-family: cursive;
+
+}
+
+input[type=text] {
+  width: 75%;
+  margin-bottom: 20px;
+  padding: 5px;
+  border: 7px solid #95a7ab ;
+  border-radius: 5px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size:100px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 50%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left:25% ;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+.delivery {
+  color: rgb(255, 255, 255);
+  padding: 5px 20px 15px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+
+/*---------------------------------footer ---------------------------------*/
+.box{
+    height: 45vh;
+    width: 60%;
+    text-align: center;
+    margin:0 auto;
+    color: linear-gradient(to bottom right, rgb(34, 27, 27), rgb(0, 157, 230))
+}
+
+.location {
+
+   text-align: center;
+    color: rgb(179, 238, 16);
+    font-size:3ch;
+    margin-right: 2%;
+    cursor: pointer;
+  
+
+}
+.contact {
+    float: left;
+    margin: 5%;
+    color: rgb(179, 238, 16);
+    padding: 3%;
+    cursor: pointer;
+
+
+}
+
+.timing {
+    float: right;
+    color: rgb(179, 238, 16);
+    margin-right:15% ;
+    margin-top: 5%;
+}
+
+.mainicon {
+    display: inline-flex;
+    margin-left: 38%;
+}
+
+.icons {
+    margin: 1%;
+    margin-left: 45%;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+#icon1:hover {
+
+    color: rgb(73, 84, 145);
+}
+#icon2:hover {
+
+    color: #d6249f;
+}
+#icon3:hover {
+
+    color: rgb(211, 14, 14);
+}
+#icon4:hover {
+
+    color: lightgreen;
+}
+
+
+.text{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 2%;
+    font-size: 3ch;
+}
+.hr3 {
+    margin: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+.hr2 {
+    margin: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+/*---------------------------------footer end----------------------------------*/
+
